@@ -1,0 +1,56 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Contactos</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <header class="centrado">
+        <nav>
+            <ul>
+                <li><a href="../tareas/tareas.html">Lista de Tareas</a></li>
+                <li><a href="../calculadora/calculadora.html">Calculadora de Geometria</a></li>
+                <li><a href="../biblioteca/biblioteca.html">Biblioteca Virtual</a></li>
+                <li><a href="../mascotas/mascotas.html">Mascotas Virtuales</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="centrado">Gestor de Contactos</h1>
+
+    <div class="container">
+        <div class="card formulario">
+            <h2>Agregar Contacto</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="text" id="correo">
+            <label for="telefono">Número de Teléfono:</label>
+            <input type="text" id="telefono">
+            <button id="agregar">Agregar</button>
+        </div>
+
+        <div class="card busqueda">
+            <h2>Buscar Contacto</h2>
+            <label for="buscarNombre">Buscar por Nombre:</label>
+            <input type="text" id="buscarNombre">
+            <button id="buscar">Buscar</button>
+        </div>
+    </div>
+
+    <div class="card lista">
+        <h2 class="centrado">Lista de Contactos</h2>
+        <ul id="listaContactos">
+          
+        </ul>
+    </div>
+
+    <script src="contactos.ts"></script>
+</body>
+</html>

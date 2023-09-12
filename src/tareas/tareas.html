@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #66b3e0;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid #e1dede;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        button#addTaskButton {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button#addTaskButton:hover {
+            background-color: #555;
+        }
+
+        ul#taskList {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        ul#taskList li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 5px;
+        }
+
+        ul#taskList li button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        ul#taskList li button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../calculadora/calculadora.html">Calculadora de Geometria</a></li>
+                <li><a href="../biblioteca/biblioteca.html">Biblioteca Virtual</a></li>
+                <li><a href="../mascotas/mascotas.html">Mascotas Virtuales</a></li>
+                <li><a href="../contactos/contactos.html">Gestor de Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Lista de Tareas</h2>
+        <input type="text" id="taskInput" placeholder="Agregar nueva tarea">
+        <button id="addTaskButton">Agregar</button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="./tareas.ts"></script>
+
+</body>
+</html>

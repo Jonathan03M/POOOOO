@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Geometría</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #66b3e0;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid #e1dede;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        #results {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../tareas/tareas.html">Lista de Tareas</a></li>
+                <li><a href="../biblioteca/biblioteca.html">Biblioteca Virtual</a></li>
+                <li><a href="../mascotas/mascotas.html">Mascotas Virtuales</a></li>
+                <li><a href="../contactos/contactos.html">Gestor de Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h2>Calculadora de Geometría</h2>
+        <!-- Formulario para ingresar los datos de la figura -->
+        <form id="form">
+            <label for="shape">Selecciona una forma:</label>
+            <select id="shape">
+                <option value="circle">Círculo</option>
+                <option value="rectangle">Rectángulo</option>
+                <option value="triangle">Triángulo</option>
+            </select>
+
+            <div id="circleFields">
+                <!-- Campos para el círculo -->
+                <label for="radius">Radio:</label>
+                <input type="number" id="radius" step="0.01">
+            </div>
+
+            <div id="rectangleFields">
+                <!-- Campos para el rectángulo -->
+                <label for="length">Longitud:</label>
+                <input type="number" id="length" step="0.01">
+                <label for="width">Ancho:</label>
+                <input type="number" id="width" step="0.01">
+            </div>
+
+            <div id="triangleFields">
+                <!-- Campos para el triángulo -->
+                <label for="side1">Lado 1:</label>
+                <input type="number" id="side1" step="0.01">
+                <label for="side2">Lado 2:</label>
+                <input type="number" id="side2" step="0.01">
+                <label for="side3">Lado 3:</label>
+                <input type="number" id="side3" step="0.01">
+            </div>
+
+            <button type="button" id="calculateButton">Calcular</button>
+            <!-- Resultados -->
+            <div id="results">
+                <p>Área: <span id="areaResult"></span></p>
+                <p>Perímetro: <span id="perimeterResult"></span></p>
+            </div>
+        </form>
+    </div>
+    
+    
+    <script src="calculadora.ts"></script>
+</body>
+</html>

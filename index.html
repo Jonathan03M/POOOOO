@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Actividades</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <style>
+        /* CSS para centrar solo el título */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Añade esto para centrar verticalmente el contenido */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed; /* Fija el encabezado en la parte superior */
+    width: 100%; /* Ajusta el ancho al 100% */
+    top: 0; /* Coloca el encabezado en la parte superior */
+}
+
+/* Resto de tu CSS */
+.container {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #e1dede;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.titulo {
+    color: #333;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Agrega esta línea para establecer el color del texto en blanco */
+    transition: color 0.3s;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./src/tareas/tareas.html">Lista de Tareas</a></li>
+                <li><a href="/CalculadoraGeo.html">Calculadora de Geometría</a></li>
+                <li><a href="./src/biblioteca/biblioteca.html">Biblioteca Virtual</a></li>
+                <li><a href="/mascotas.html">Mascotas Virtuales</a></li>
+                <li><a href="/contactos.html">Gestor de Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="titulo">Trabajo Práctico de TypeScript</h1>
+    </div>
+
+    <!-- <script src="./main.ts"></script> -->
+</body>
+</html>
